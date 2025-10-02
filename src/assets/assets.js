@@ -1,5 +1,5 @@
 import basket from './basket.png'
-import brand from './brand.png'
+import brand from './Brand.png'
 import search from './search.png'
 import order from './order.png'
 import logout from './logout.png'

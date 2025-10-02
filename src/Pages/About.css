@@ -1,0 +1,43 @@
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}

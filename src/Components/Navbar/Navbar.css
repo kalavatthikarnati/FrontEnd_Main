@@ -1,0 +1,270 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 120px;
+  
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.navbar button{
+  background: transparent;
+  font-size: 16px;
+  color:#49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar-search_icon{
+  position: relative;
+}
+.navbar-search_icon .dot{
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #ff6347;
+  border-radius: 5px;
+  top: -5px;
+  right: -5px;
+}
+.navbar li{
+  cursor: pointer;
+
+}
+
+
+.navbar button:hover {
+  background-color: tomato;
+}
+.navbar-search_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /*margin-right: 20px;*/
+}
+.navbar-right img {
+  width: 24px;   
+  height: 24px;
+  cursor: pointer;
+  object-fit: contain;
+}
+.navbar-profile{
+  position: relative;
+}
+.nav-profile-dropdown{
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f8f9fa;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+  list-style: none;
+}
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer; 
+}
+.nav-profile-dropdown img{
+  width: 20px;
+}
+.nav-profile-dropdown li:hover{
+  color: tomato;
+}
+
+
+
+/* top header*/
+.top-header {
+  background: #f8f9fa; 
+  padding: 8px 0;
+  margin: 0;
+  margin-top: 20px;
+  
+}
+
+.header-list {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-list li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-list li i {
+  margin-right: 8px;
+  color: #ff6347; 
+}
+
+.header-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header-list li a:hover {
+  color: #ff6347;
+}
+/*Header Top Section */
+.top-header {
+  background: #f8f9fa;  
+  padding: 8px 0;
+  
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.header-list {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  gap: 30px;                   
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-list li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-list li i {
+  margin-right: 8px;
+  color: #ff6347;   
+}
+
+.header-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header-list li a:hover {
+  color: #ff6347;
+}
+.navbar-menu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.navbar-menu li:hover {
+  color: #ff6347;
+}
+
+/* Theme toggle button */
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #49557e;
+}
+
+/* Light theme */
+body.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #121212;
+  /*background-color: #ff6347;*/
+
+  color: #f1f1f1;
+}
+
+body.dark .navbar,
+body.dark .top-header {
+  background-color: #1e1e1e;
+}
+
+body.dark .navbar-menu li,
+body.dark .header-list li a,
+body.dark .header-list li span {
+  color: #f1f1f1;
+}
+
+
+
+
+
+@media (max-width:1050px) {
+    .navbar .logo{
+      width: 140px;
+    } 
+    .navbar-menu{
+      gap: 20px;
+      font-size: 17px;
+    }
+    .navbar-right{
+      gap: 30px;
+    }
+    .navbar-right img{
+      width: 22px;
+
+    }
+    .navbar-right button{
+      padding: 8px 25px;
+    }
+}
+@media (max-width:900px) {
+    .navbar .logo{
+      width: 120px;
+    } 
+    .navbar-menu{
+      gap: 15px;
+      font-size: 16px;
+    }
+    .navbar-right{
+      gap: 20px;
+    }
+    .navbar-right img{
+      width: 20px;
+
+    }
+    .navbar-right button{
+      padding: 7px 20px;
+      font-size: 15px;
+    }
+}
+@media (max-width:750px) {
+     .navbar-menu{
+       display: none;
+    }
+  }

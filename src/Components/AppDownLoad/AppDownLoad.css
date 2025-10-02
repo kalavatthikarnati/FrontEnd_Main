@@ -1,0 +1,26 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 30px;
+    font-size: max(3vw,20px);
+    text-align: center;
+    font-weight: 500;
+}
+.app-download-platform img {
+  width: 200px;      /* make them bigger */
+  height: 65px;      /* consistent height */
+  object-fit: contain;
+  margin: 0 10px;    /* spacing between buttons */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.app-download-platform img:hover {
+  transform: scale(1.05);   /* small zoom effect on hover */
+}
+
+.app-download-platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;   /* spacing between badges */
+}

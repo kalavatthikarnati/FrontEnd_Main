@@ -1,0 +1,65 @@
+/* Contact Form Styling */
+.contact-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+ /* border: 1px solid #e5e5e5;*/
+  padding: 2rem;
+}
+/* Input & Textarea Focus Style - Tomato Theme */
+.form-control:focus {
+  border-color: tomato !important;
+ /* box-shadow: 0 0 0 0.25rem rgba(255, 99, 71, 0.25);  tomato color */
+  outline: none;
+}
+
+
+
+.contact-card label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card .form-control {
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+}
+
+.contact-card textarea.form-control {
+  resize: vertical;
+}
+
+.contact-card .btn {
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-card .btn i {
+  font-size: 1rem;
+}
+/* Custom Tomato Button */
+.btn-outline-tomato {
+  color: tomato;
+  border: 2px solid tomato;
+  background-color: transparent;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-outline-tomato:hover {
+  background-color: tomato;
+  color: #fff;
+  border-color: tomato;
+}
+

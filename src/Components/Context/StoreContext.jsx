@@ -12,6 +12,7 @@ const StoreContextProvider = (props) => {
     const [token,setToken] = useState("");
     const [food_list,setFoodList] = useState([]);
     const url = "https://backend-main-j4hf.onrender.com";
+     //const url = import.meta.env.VITE_API_BASE_URL;
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
